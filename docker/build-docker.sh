@@ -88,15 +88,15 @@ PHYLODB_VERSION=$(get_phylodb_version)
 PHYLODB_DIR="$PROJ_ROOT/$PHYLODB_NAME"
 PHYLODB_JAR_BASE_NAME="$PHYLODB_NAME-$PHYLODB_VERSION.jar"
 PHYLODB_JAR="$PHYLODB_DIR/build/libs/$PHYLODB_JAR_BASE_NAME"
-if [ ! -f "$PHYLODB_JAR" ] ; then
+# if [ ! -f "$PHYLODB_JAR" ] ; then
 
-    echo "[$SCRIPT_NAME][INFO] - building $PHYLODB_JAR."
-    pushd "phylodb"
-    . "configure.sh"
-    popd
-else
-    echo "[$SCRIPT_NAME][INFO] - $PHYLODB_JAR already exists."
-fi
+#     echo "[$SCRIPT_NAME][INFO] - building $PHYLODB_JAR."
+#     pushd "phylodb"
+#     . "configure.sh"
+#     popd
+# else
+#     echo "[$SCRIPT_NAME][INFO] - $PHYLODB_JAR already exists."
+# fi
 
 # Neo4j APOC 5 information:
 # https://neo4j.com/docs/apoc/5/installation/
